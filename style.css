@@ -1,0 +1,182 @@
+/* external css https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #D8DEf3;
+    background-color: #1A1f29;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.centered {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    margin: 30px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.icon-small {
+    width: 25px;
+    margin-right: 5px;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Adjust the distance as needed */
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    justify-content: center;
+}
+
+.album-cover {
+    width: 22em;
+    height: 22em;
+}
+
+.info {
+    color: #1a1f29;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    margin: 0px;
+}
+.song-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+.artist-name {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color:#3b3b3b;
+}
+.song-desc {
+    margin: 0px;
+}
+.song-embed {
+    margin: 20px 0px;
+}
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.portrait {
+    height: 50vh;
+}
+.bio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bio-right {
+    padding: 0px 20px;
+    width: 35%;
+}
+.links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.link {
+    border-radius: 100%;
+    width: 1.75rem;
+    height: 1.75rem;  
+}
+.floating:hover {
+    animation-name: wiggle;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.bio-text {
+    text-wrap: wrap;
+    text-align: justify;
+    line-height: 1.5;
+    font-style: italic;
+}
+.event {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20%;
+    padding: 20px;
+}
+.calendar {
+    width: 3vw;
+    height: 3vw;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -5px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.events {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper {
+    overflow: hidden;
+    width: 100%;
+    height:  100vh;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blue {
+    background: linear-gradient(0deg, #415590 0%, #ddf1f8 100%);
+}
+.green {
+    background: linear-gradient(0deg, #262986 0%, #5ce48d 70%);
+}
+.pink {
+    background: linear-gradient(0deg, #0d1230 0%, #ffd6f9 100%);
+}
+.black {
+    background: linear-gradient(0deg, #060a1f 0%, #d1d8ff 100%);
+}
