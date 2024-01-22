@@ -8,6 +8,25 @@ body {
     background-color: #1A1f29;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 20px 40px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.udo {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5px 20px;
+}
+
 .row {
     display: flex;
 }
@@ -22,11 +41,17 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .title {
     text-align: center;
     font-size: 5rem;
     margin: 30px;
+    color: #0d1230;
 }
 
 .icon {
@@ -100,7 +125,7 @@ body {
     height: 50vh;
 }
 .bio {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,8 +162,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 20%;
     padding: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    color: black;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.event-info {
+    margin: 20px 0px;
 }
 .calendar {
     width: 3vw;
@@ -150,10 +182,17 @@ body {
     100%   { transform: translate(0, -0px); }   
 }
 .events {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.event-date {
+    color: gray;
+}
+.event-desc {
+    text-align: center;
+    font-style: italic;
 }
 
 .swiper {
@@ -179,4 +218,67 @@ body {
 }
 .black {
     background: linear-gradient(0deg, #060a1f 0%, #d1d8ff 100%);
+}
+
+
+
+time.icon
+{
+  font-size: 0.8em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #262986;
+  border-bottom: 1px dashed #0d1230;
+  box-shadow: 0 2px 0 #262986;
+}
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #262986;
+}
+time.icon span
+{
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+form.booking {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 10px;
+    margin: 20px 0px;
+}
+form.booking label { text-align: right; }
+form.settings label:after { content: ":"; }
+
+.x {
+    position: relative;
+    top: 0px;
+    width: 20px;
+    align-self: flex-end;
 }
